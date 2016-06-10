@@ -81,18 +81,130 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: lighter;
 }
 .services {
+  display: table-cell;
   line-height: 75px;
 }
 .services > span {
-  padding-left: 10px;
+  padding-left: 15px;
   font-size: 0.95em;
+  vertical-align: middle;
 }
 .services > span:hover {
+  text-decoration: underline;
+}
+.services > ul > span:hover {
   text-decoration: underline;
 }
 .first-nav {
   margin-left: 10px;
 }
+.space {
+  margin-top: 25px;
+}
+.fourd {
+  background-color: #f0f0f0;
+  padding: 15px;
+  width: 80%;
+}
+.first-list {
+  margin-top: 20px;
+}
+/* Media Queries */
+
+/* Small */
+@media (max-width: 900px) {
+
+  .services {
+    line-height: 30px;
+  }
+  .services > span {
+    visibility: hidden;
+    color: transparent;
+    line-height: auto;
+  }
+  .services > ul > span {
+    marign-top: 2.5px;
+  }
+  .dropdown-services {
+    height: auto;
+  }
+  .services > ul {
+    line-height: auto;
+    margin-top: -50px;
+  }
+
+}
+/* Large */
+@media (min-width: 900px) {
+
+  .services > ul {
+    visibility: hidden;
+  }
+}
+/* Navbar*/
+@media (max-width: 630px) {
+  .second {
+    margin-bottom: 15px;
+  }
+  .first-list {
+    margin-bottom: 35px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
