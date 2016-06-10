@@ -6,40 +6,61 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800italic,800,700italic,700,600italic,600,400italic,300italic,300' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <script type="text/javascript" src="/app/assets/javascripts/custom.js"></script>
 </head>
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">HR4D</a>
-      </div>
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Program Managment</a></li>
-              <li><a href="#">Process Design &amp; Improvement</a></li>
-              <li><a href="#">Technology Utilization</a></li>
-              <li><a href="#">Measurement and Analytics</a></li>
-              <li><a href="#">Strategic Planning</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+
+<div class="navbar">
+
+    <div class="box first">
+      <span>HR4D</span>
+    </div>
+
+    <div class="box second">
+      <span class="tagline">Define, Develop, Deliver, and Differentiate</span>
+      <br>
+
+      <span class="link">
+        Home
+      </span>
+
+      <span class="left link" id="services">
+        Services
+      </span>
+      <span class="caret"></span>
+
+      <span class="left link">
+        Contact
+      </span>
+
+      <span class="left link">
+        About
+      </span>
+
+    </div>
+
+</div>
+
+<div class="dropdown-services">
+  <nav class="services">
+    <span class="first-nav">Program Managment</span>
+    <span>Process Design and Improvement</span>
+    <span>Technology Utilization</span>
+    <span>Measurement and Analytics</span>
+    <span>Strategic Planning</span>
   </nav>
+</div>
+
 
 <div class="container">
 <%= yield %>
+</div>
+
+<div class="footer">
+    
 </div>
 
 </body>
