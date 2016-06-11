@@ -9,6 +9,14 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+a, a:active, a:visited {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: underline;
+  color: white;
+}
 /*
   Colors:
   
@@ -45,7 +53,7 @@ body {
   margin-left: 10px;
 }
 .link {
-  color: #bababa;
+  color: #f2f2f2;
 }
 .link:hover {
   text-decoration: underline;
@@ -109,10 +117,19 @@ h1,h2,h3,h4,h5,h6 {
   margin-top: 25px;
 }
 .fourd {
-  background-color: rgba(255,255,255,0.5);
-  padding: 10px;
+  background-color: rgba(255,255,255,0.25);
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
   width: 80%;
   margin-bottom: 25px;
+  color: white;
+}
+.fourd > h1 {
+  padding-top: 10px;
+}
+.fourd > p {
+  color: white;
 }
 .first-list {
   margin-top: 20px;
@@ -122,17 +139,40 @@ h1,h2,h3,h4,h5,h6 {
 }
 .footer {
   width: 100%;
-  height: 150px;
+  height: auto;
   background-color: transparent;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .footer > div {
   padding: 10px;
   margin-left: 15px;
   color: white;
-  margin-top: 25px;
 }
-.footer > div > p:hover {
-  text-decoration: underline;
+.text-center {
+  text-align: center;
+}
+
+.contact {
+  width: 100%;
+  height: auto;
+  background-color: rgba(255,255,255,0.25);
+  padding: 10px;
+  margin-top: 50px;
+}
+.left-half {
+  width: 40%;
+  margin-left: 6.66%;
+  display: inline-block;
+  vertical-align: top;
+}
+.right-half {
+  width: 40%;
+  margin-left: 6.66%;
+  display: inline-block;
+}
+.heavier {
+  font-weight: 400;
 }
 /* Media Queries */
 
@@ -175,7 +215,14 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 35px;
   }
 }
-
+@media (max-width: 1150px) {
+  .right-half {
+    display: block;
+    width: 75%;
+    margin-left: 12.5%;
+    text-align: center;
+  }
+}
 
 
 
