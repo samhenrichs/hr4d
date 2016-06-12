@@ -16,7 +16,7 @@
 <div class="navbar">
 
     <div class="box first">
-      <span>HR4D</span>
+      <a href="/pages/home" class="link-disabled">HR4D</a>
     </div>
 
     <div class="box second">
@@ -27,18 +27,18 @@
         Home
       </a>
 
-      <span class="left link" id="services">
+      <a class="left link" id="services" href="/pages/services">
         Services
-      </span>
-      <span class="caret"></span>
+      </a>
+      <div class="caret" id="caret"></div>
 
       <a class="left link" href="/pages/contact">
-        Contact
+        Contact Us
       </a>
 
-      <span class="left link">
+      <a class="left link" href="/pages/about">
         About
-      </span>
+      </a>
 
     </div>
 
@@ -47,22 +47,25 @@
 <div class="dropdown-services">
   <nav class="services">
 
-    <span class="first-nav">Program Managment</span>
-    <span>Process Design and Improvement</span>
-    <span>Technology Utilization</span>
-    <span>Measurement and Analytics</span>
-    <span>Strategic Planning</span>
+    <a class="first-nav" href="/services/strategicplanning">Strategic Planning</a>
+    <a href="/services/coaching">Coaching</a>
+    <a href="/services/pm">Program Management</a>
+    <a href="/services/process">Process Design &amp; Improvement</a>
+    <a href="/services/tech">Technology Utilization</a>
+    <a href="/services/ma">Measurement &amp; Analytics</a>
 
     <ul class="first-list">
-      <span class="white">Program Managment</span>
+      <a class="white" href="/services/strategicplanning">Strategic Planning</a>
       <br>
-      <span class="white">Process Design and Improvement</span>
+      <a class="white" href="/services/coaching">Coaching</a>
       <br>
-      <span class="white">Technology Utilization</span>
+      <a class="white" href="/services/pm">Program Management</a>
       <br>
-      <span class="white">Measurent and Analytics</span>
+      <a class="white" href="/services/process">Process Design &amp; Improvement</a>
       <br>
-      <span class="white">Strategic Planning</span>      
+      <a class="white" href="/services/tech">Technology Utilization</a>
+      <br>
+      <a class="white" href="/services/ma">Measurement &amp; Analytics</a>      
     </ul>
 
   </nav>
@@ -73,10 +76,6 @@
 <%= yield %>
 </div>
 
-  <div class="footer">
-    <h2 class="text-center white">For More Information</h2>
-    <p class="text-center white">Contact Brian Schmeiser at 608-620-5110, or email at <a href="mailto:BrianSchmeiser@HR4DConsulting.com">BrianSchmeiser@HR4DConsulting.com</a></p>
-  </div>
 
 </body>
 </html>

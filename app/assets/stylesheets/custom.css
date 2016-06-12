@@ -1,11 +1,11 @@
 html, head, body {
   margin: 0px;
   padding: 0px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Helvetica", "Sans Serif";
   font-weight: lighter;
 }
 body {
-  background-image: url(/assets/backsplah.jpg);
+  background-image: url(/assets/chairs.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -26,6 +26,27 @@ a:hover {
   Gold: #e3d165
 
 */
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+.caret-rotate {
+    -webkit-transform: rotate(7.5deg);
+    -moz-transform: rotate(7.5deg);
+    -ms-transform: rotate(7.5deg);
+    -o-transform: rotate(7.5deg);
+    transform: rotate(7.5deg);
+}
+.caret-transition {
+  -webkit-transition: all 250s ease-out;
+  -moz-transition: all 250s ease-out;
+  -o-transition: all 250s ease-out;
+  transition: all 250s ease-out;
+}
+.link-disabled, .link-disabled:hover, .link-disabled:active, .link-disabled:visited {
+  text-decoration: none;
+}
 .navbar {
   width: 100vw;
   height: 100px;
@@ -71,10 +92,10 @@ a:hover {
   width: 0;
   height: 0;
   vertical-align: middle;
-  border-top: 4px dashed;
-  border-top: 4px solid #bababa;
-  border-right: 4px solid transparent;
-  border-left: 4px solid transparent;
+  border-top: 5px dashed;
+  border-top: 5px solid white;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
 }
 .dropdown-links {
   margin-left: 5px;
@@ -98,16 +119,16 @@ h1,h2,h3,h4,h5,h6 {
   display: table-cell;
   line-height: 75px;
 }
-.services > span {
+.services > a {
   padding-left: 15px;
   font-size: 0.95em;
   vertical-align: middle;
   color: white;
 }
-.services > span:hover {
+.services > a:hover {
   text-decoration: underline;
 }
-.services > ul > span:hover {
+.services > ul > a:hover {
   text-decoration: underline;
 }
 .first-nav {
@@ -143,6 +164,16 @@ h1,h2,h3,h4,h5,h6 {
   background-color: transparent;
   margin-top: 100px;
   margin-bottom: 100px;
+  color: white;
+}
+.footer-bottom {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  margin-top: 100px;
+  position: relative;
+  bottom: 0;
+  color: white;
 }
 .footer > div {
   padding: 10px;
@@ -152,7 +183,10 @@ h1,h2,h3,h4,h5,h6 {
 .text-center {
   text-align: center;
 }
-
+.narrow {
+  width: 90%;
+  margin-left: 5%;
+}
 .contact {
   width: 100%;
   height: auto;
@@ -177,17 +211,17 @@ h1,h2,h3,h4,h5,h6 {
 /* Media Queries */
 
 /* Small */
-@media (max-width: 900px) {
+@media (max-width: 990px) {
 
   .services {
     line-height: 30px;
   }
-  .services > span {
+  .services > a {
     visibility: hidden;
     color: transparent;
     line-height: auto;
   }
-  .services > ul > span {
+  .services > ul > a {
     marign-top: 2.5px;
   }
   .dropdown-services {
@@ -200,7 +234,7 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 /* Large */
-@media (min-width: 900px) {
+@media (min-width: 990px) {
 
   .services > ul {
     visibility: hidden;
@@ -218,9 +252,10 @@ h1,h2,h3,h4,h5,h6 {
 @media (max-width: 1150px) {
   .right-half {
     display: block;
-    width: 75%;
-    margin-left: 12.5%;
-    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    text-align: left;
+    margin-top: 15px;
   }
 }
 

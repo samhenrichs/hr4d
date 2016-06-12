@@ -1,8 +1,9 @@
 $('document').ready(function() {
-
+	
 	$('.dropdown-services').hide(000);
 
-	$('#services').click(function() {
+	$('#caret').click(function() {
+
 		if($('.dropdown-services').is(":visible")) {
 			$('.dropdown-services').slideUp(300);
 		}
@@ -10,6 +11,5 @@ $('document').ready(function() {
 			$('.dropdown-services').slideDown(300);
 		}
 	});
-
 
 });
